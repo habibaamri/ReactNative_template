@@ -5,9 +5,13 @@ import { connect } from "react-redux";
 import { addNavigationHelpers, StackNavigator } from "react-navigation";
 
 import Main from "../components/container/MainContainer";
+import List from "../components/container/ElementList";
+import SecondScreen from "../components/container/ElementList";
 
 export const AppNavigator = StackNavigator({
-	Main: { screen: Main }
+	SecondScreen: { screen: SecondScreen },
+	Main: { screen: Main },
+	List: { screen: List }
 });
 
 const AppWithNavigationState = ({ dispatch, nav }) => <AppNavigator />;
