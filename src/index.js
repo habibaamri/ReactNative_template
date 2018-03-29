@@ -6,6 +6,7 @@ import React from "react";
 import AppWithNavigationState from "./navigators/AppNavigator";
 import Main from "./components/views/main/Main";
 
+
 class App extends React.Component {
 	componentDidMount() {
 		this.sub = BackHandler.addEventListener("hardwareBackPress", () => {

@@ -12,6 +12,8 @@ class SecondScreen extends React.Component {
        static navigationOptions = {
       	 title: 'React Native Template Test',
        };
+
+
  render() {
 	 const { navigate } = this.props.navigation;
 	 return (
@@ -45,6 +47,7 @@ export default class Main extends React.Component {
     );
   }
 }
+
 const style = StyleSheet.create({
 	mainView: {
 		flex: 1,
